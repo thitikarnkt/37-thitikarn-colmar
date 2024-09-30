@@ -62,17 +62,17 @@ header a p span {
     justify-content: center;
 }
 
-.rightside h1, h3 {
+.rightside h1 {
     color: 414141;
-    padding: 32px 0;
+    padding: 20px 0;
 }
 
 .rightside h1 {
-    font-size: 60px ;
+    font-size: 48px ;
 }
 
-.rightside p {
-    font-size: 24px;
+.hero .rightside p {
+    font-size: 20px;
 }
 
 .hero-button {
@@ -83,6 +83,49 @@ header a p span {
     background-color: #414141;
     text-decoration: none;
     text-align: center;
+}
+
+.information {
+    background-color: #F1F3F3;
+    display: flex;
+}
+
+.information .leftside h2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.information .leftside h6 {
+    padding-top: 32px;
+}
+
+.information .rightside {
+    padding: 32px 0;
+}
+
+.information .rightside .items {
+    display: flex;
+    padding: 16px;
+}
+
+.itemsleftside {
+    width: 35%;
+}
+
+.itemsleftside-img {
+    width: 100%;
+}
+
+.itemsrightside {
+    width: 65%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemsrightside p {
+    margin: 8px 0;
 }
 
 .mobile {
@@ -117,5 +160,19 @@ header a p span {
         justify-content: space-between;
         width: 100%;
         margin: 0 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero .rightside {
+        width: 100%;
+        margin: 32px 16px;
     }
 }
