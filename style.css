@@ -29,7 +29,6 @@ header a p span {
     align-items: center;
     text-decoration:none;
     height: 32px;
-    
 }
 
 .menu {
@@ -40,4 +39,48 @@ header a p span {
 .menu-items {
     text-decoration: none;
     margin-left: 16px;
+}
+
+.hero {
+    display: flex;
+    background-color: #D3D2D3;
+}
+
+.leftside {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.left-image-width {
+    width: 100%;
+}
+
+.rightside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rightside h1, h3 {
+    color: 414141;
+    padding: 32px 0;
+}
+
+.rightside h1 {
+    font-size: 60px ;
+}
+
+.rightside p {
+    font-size: 24px;
+}
+
+.hero-button {
+    margin-top: 32px;
+    padding: 8px 0px;
+    width: 50%;
+    color: white;
+    background-color: #414141;
+    text-decoration: none;
+    text-align: center;
 }
