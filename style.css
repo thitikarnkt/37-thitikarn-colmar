@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 24px;
+    align-items: center;
+    /* border check */
+    /* border: 1px solid red; */
+}
+
+header a p,
+    .menu-items {
+    color: #333333;
+}
+
+header a p span {
+    color: rgb(158, 158, 158);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    height: 32px;
+    
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-items {
+    text-decoration: none;
+    margin-left: 16px;
+}
