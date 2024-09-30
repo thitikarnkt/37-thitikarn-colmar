@@ -13,6 +13,10 @@ header {
     align-items: center;
     /* border check */
     /* border: 1px solid red; */
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 100%;
 }
 
 header a p,
@@ -27,7 +31,7 @@ header a p span {
 .logo {
     display: flex;
     align-items: center;
-    text-decoration:none;
+    text-decoration: none;
     height: 32px;
 }
 
@@ -44,6 +48,7 @@ header a p span {
 .hero {
     display: flex;
     background-color: #D3D2D3;
+    padding-top: 64px;
 }
 
 .leftside {
@@ -85,9 +90,13 @@ header a p span {
     text-align: center;
 }
 
-.information {
+.information, .thesis {
     background-color: #F1F3F3;
     display: flex;
+}
+
+.thesis {
+    flex-direction: column;
 }
 
 .information .leftside h2 {
@@ -103,7 +112,7 @@ header a p span {
     padding: 32px 0;
 }
 
-.information .rightside .items {
+.items {
     display: flex;
     padding: 16px;
 }
@@ -126,6 +135,40 @@ header a p span {
 
 .itemsrightside p {
     margin: 8px 0;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 32px;
+    padding: 32px 72px;
+}
+
+.video-element {
+    width: 100%;
+}
+
+.elements .leftside h2 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.elements {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 64px 24px;
+}
+
+.footer-list {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
 .mobile {
