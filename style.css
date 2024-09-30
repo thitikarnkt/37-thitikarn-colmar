@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    color: #4a4a4a;
 }
 
 header {
@@ -95,11 +96,15 @@ header a p span {
     display: flex;
 }
 
-/* .thesis, .course{
+.thesis, .course{
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
+
+.course {
+    background-color: #E7E8E9 ;
+}
 
 .thesis .title h1 ,
     .course .title h1  {
@@ -155,10 +160,19 @@ header a p span {
 
 .item {
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 .item-img-width{
     width: 100%;
+}
+
+.item-descrip {
+    margin: 16px;
+}
+
+.item-descrip-sp {
+    padding: 8px 0;
 }
 
 .video-element {
@@ -185,7 +199,7 @@ header a p span {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px 64px 24px;
+    padding: 16px 24px;
 }
 
 .footer-list {
@@ -200,9 +214,13 @@ footer {
 }
 
 /* mobile and tablet ver */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .desktop {
         display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 
     header {
@@ -242,4 +260,59 @@ footer {
         width: 100%;
         margin: 32px 16px;
     }
+
+    .course .mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .course .title h1 {
+        display: flex;
+        padding-top: 32px ;
+        padding-bottom: 16px;
+        align-items: center;
+    }
+
+    .thesis .title h1 {
+        padding-top: 32px ;
+        padding-bottom: 16px;
+    }
+
+    .mobile-course-item {
+        margin: 0px 16px 8px 16px ;
+        padding: 16px;
+        background-color: #b9b9b9;
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .course-item-m{
+        margin-bottom: 32px ;
+    }
+   
+    .thesis .elements .leftside {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    
+    .information .rightside {
+        width: 100%;
+    }
+
+    .information .rightside .items {
+        flex-direction: column;
+    }
+    .itemsleftside {
+        width: 100%;
+    }
+    .itemsleftside-img .mobile {
+        width: 100%;
+    }
+
+    .itemsrightside {
+        margin: 16px 0;
+    }
+
 }
